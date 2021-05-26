@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.array{
+  display: flex;
+  flex-direction: row;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +40,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.array{
+  background-color: khaki;
+  border-radius: 1rem;
+}
+
+.isOrbit{
+  animation: orbit infinite 2s linear;
+}
+
+.isAntiorbit{
+  animation: antiorbit 1s linear;
+}
+@keyframes antiorbit {
+  from { transform: rotate(360deg) }
+  to   {  transform: rotate(180deg) }
+}
+
+@keyframes orbit {
+  from { transform: rotate(0deg) }
+  to   {  transform: rotate(360deg) }
+}
+
+.swap1{
+  animation: swap1 1s linear;
+}
+
+@keyframes swap1 {
+  from{ transform: rotate(0deg) translateX(80px)}
+  to{ transform: rotate(180deg) translateX(0px)}
+}
+
+.swap2{
+  animation: swap2 1s linear;
+}
+
+@keyframes swap2 {
+  from{ transform: rotate(0deg) translateX(-80px)}
+  to{ transform: rotate(180deg) translateX(0px)}
+}
+
+.array div{
+  border-radius : 50%;
+  background-color : #61dafb;
+  width : 35px;
+  height : 35px;
+  padding: 10px;
+  color : #282c34;
+  margin: 10px;
+  align-contentontent: center;
+  display: grid;
 }
